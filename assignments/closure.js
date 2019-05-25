@@ -1,6 +1,16 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function dig(){
+const tool = "shovel";
+  console.log(`Use the ${tool} to dig`);
+      function x(){
+        const spot = "X marks the spot";
+        console.log(`The  map says ${spot} to dig`)
+      }
+    x()
+}
+dig()
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
