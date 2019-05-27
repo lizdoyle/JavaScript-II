@@ -61,10 +61,16 @@ multiplyNums(3, 4, function(multiplyNums){
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+if (items.includes(item)) {
+  console.log(true);
 }
-// contains(items, function(x){
-//   console.log(contains)
-// });
+else {
+  console.log(false);
+}
+}
+contains("Notes", items, function(contains){
+  console.log(contains)
+});
 /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {
