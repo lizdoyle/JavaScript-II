@@ -81,16 +81,17 @@ function removeDuplicates(array, cb) {
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
   numbers.reduce((unique, item) => {
-      console.log(
-        item, 
-        unique,
-        unique.includes(item),
-        unique.includes(item) ? unique : [...unique, item],
-        );
+      // console.log(
+      //   item, 
+      //   unique,
+      //   unique.includes(item),
+      //   unique.includes(item) ? unique : [...unique, item],
+      //   );
       return  unique.includes(item) ? unique : [...unique, item]} , []);
     }
 
 
-// console.log(items);
+console.log(numbers);
 
+// cannot figure out the output...
 console.log(removeDuplicates(numbers));
