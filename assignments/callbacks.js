@@ -73,8 +73,24 @@ contains("Notes", items, function(contains){
 });
 /* STRETCH PROBLEM */
 
+numbers = [1,1,2,4,5,6,2,6,7,7,8,3,8,3,5]
+
+
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
-}
+  numbers.reduce((unique, item) => {
+      console.log(
+        item, 
+        unique,
+        unique.includes(item),
+        unique.includes(item) ? unique : [...unique, item],
+        );
+      return  unique.includes(item) ? unique : [...unique, item]} , []);
+    }
+
+
+// console.log(items);
+
+console.log(removeDuplicates(numbers));
